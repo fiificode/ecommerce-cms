@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/model-provider";
+import { ToasterProvider } from "@/providers/toast-provider";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={ubuntu.className}>
+          <ToasterProvider />
           <ModalProvider />
           {children}
         </body>
