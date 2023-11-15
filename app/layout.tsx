@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
@@ -7,8 +7,9 @@ import { ModalProvider } from "@/providers/model-provider";
 import { ToasterProvider } from "@/providers/toast-provider";
 
 const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  subsets: ["latin-ext"],
+  style:"normal",
+  weight: [ "300","400","500", "700"],
 });
 
 export const metadata: Metadata = {
