@@ -7,9 +7,9 @@ import { ModalProvider } from "@/providers/model-provider";
 import { ToasterProvider } from "@/providers/toast-provider";
 
 const ubuntu = Ubuntu({
-  subsets: ["latin-ext"],
-  style:"normal",
-  weight: [ "300","400","500", "700"],
+  subsets: ["cyrillic"],
+  style: "normal",
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   return (
     <ClerkProvider>
       <html lang="en">
