@@ -9,6 +9,7 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",
   "Access-Control-Allow-Headers":
     "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
+  "Access-Control-Allow-Credentials": "true",
 };
 
 export async function OPTIONS() {
